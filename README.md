@@ -1,13 +1,15 @@
 # Experience_Jeju_together
 
+
 ## 프로젝트 계기
 안녕하세요. 저희는 이번 KHUDA 4기 Let's experience Jeju together 프로젝트를 하게 된 KHUDA 4기 김민석, 최호윤, 한주상이라고 합니다.
 저희는 Dacon에서 제주도 특산물에 대한 가격 예측 경진 대회에 참여했습니다. 구성원 모두 데이터 관련 경진 대회 경험을 얻고 싶어 이 프로젝트를 11.8 ~ 12.3일 까지 진행 하게 되었습니다.
 
+
 ## 회의 계획 내용(feat. 화이트보드)
 ![plan6](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/bd7673b7-57e2-4b8f-a4b9-c978c0492727)
 
-![plan7](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/7bab799c-7680-4f72-a31a-9cf06c844ca1)
+
 
 ## 데이터 분석 과정(EDA)
 1. 날짜 정보 EDA
