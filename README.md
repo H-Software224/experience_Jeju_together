@@ -1,4 +1,4 @@
-# experience_Jeju_together
+# Experience_Jeju_together
 
 ## 주제를 정한 동기
 안녕하세요. 저희는 이번 KHUDA 4기 Let's experience Jeju together 프로젝트를 하게 된 KHUDA 4기 김민석, 최호윤 그리고 한주상이라고 합니다.
@@ -6,14 +6,17 @@ Dacon에서 우연히 제주도에서 특산물에 대해서 가격을 예측하
 
 ## 데이터 분석 과정(EDA) 이용
 1. 날짜 정보 EDA
-<img width="423" alt="plan1" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/eaf841cc-2313-4117-a079-3f4537114e9b">
 
 연도별 가격 평균을 통해 해가 갈수록 가격상승을 파악
 
+<img width="423" alt="plan1" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/eaf841cc-2313-4117-a079-3f4537114e9b">
+
 월별 가격 평균을 통해 계절 별로 가격의 변화를 파악
+
 <img width="421" alt="plan2" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/1b50bd7e-563d-4aab-83b3-07d9dc9e6a29">
 
 2. 시계열 정보 EDA
+
 <img width="455" alt="plan3" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/2d02b7e9-7d0c-4748-a1ef-14c62a5cbe77">
 
 3. 이상치 EDA
@@ -26,9 +29,7 @@ Dacon에서 우연히 제주도에서 특산물에 대해서 가격을 예측하
 
 파이썬 모듈 statsmodels.tsa에서 ARIMA 모델 사용
 
-p = 자기회귀 부분의 차수
-d = 1차 차분이 포함된 정도
-q = 이동 평균 부분의 차수
+p = 자기회귀 부분의 차수 d = 1차 차분이 포함된 정도 q = 이동 평균 부분의 차수
 
 ```python
 # 모델 학습하고 예측하기
@@ -43,8 +44,6 @@ ar_400_supply = ar_400_supply.initialize()
 test_price_list+= (predict_total_price / predict_supply).to_list()
 ```
 이를 통한 ACF 그래프로 시각화을 하였습니다.
-
-
 
 <img width="454" alt="plan6" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/f6c8568c-a408-499a-a6ac-7c054ff9a1db">
 
@@ -67,15 +66,20 @@ result = model.predict(tr_time_df, known_covariates=test_time_df, random_seed=42
 ## 마지막으로 전처리 때 썼던 EDA 방법을 이용하여 후처리
 
 1. 공휴일의 데이터 값을 0으로 변경
+
 2. 일요일의 데이터 값을 0으로 변경
+
 3. 음수로 예측한 값을 0으로 변경
 
 
 ## 프로젝트를 통해서 알 수 있는 점
 
 1. DACON에서 나온 경진대회 이외에 대회에서 제일 중요한 건 점수다(중요한 건 꺾이지 않는 마음으로 점수에 임한다.)
+
 2. 데이터를 이해하는 것이 제일 중요
+
 3. 어떤 모델을 쓰냐? 파라미터 튜닝(X) 전처리 및 후처리를 어떻게 하냐?(O)
+
 4. 앞으로 DACON 대회본선에 들고 나서 기법에 대해 알아도 된다.
 
 코드는 github에 파일 올려놨으니 참고해주시기 바랍니다! 감사합니다!
