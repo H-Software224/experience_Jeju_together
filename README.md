@@ -1,15 +1,15 @@
 # Experience_Jeju_together
 
-## 주제를 정한 동기
-안녕하세요. 저희는 이번 KHUDA 4기 Let's experience Jeju together 프로젝트를 하게 된 KHUDA 4기 김민석, 최호윤 그리고 한주상이라고 합니다.
-Dacon에서 우연히 제주도에서 특산물에 대해서 가격을 예측하는 것이 행사를 하는 것을 보게 되어서, 이번 KHUDA 동아리에서 정규 프로젝트인 만큼 데이터를 분석하고 싶어서 이거 아니면 데이터 분석 예측을 더이상 할 기회가 없다고 생각하였습니다. 그래서 이 주제로 프로젝트를 11.8 ~ 12.3일 까지 하게 되었습니다.
+## 프로젝트 계기
+안녕하세요. 저희는 이번 KHUDA 4기 Let's experience Jeju together 프로젝트를 하게 된 KHUDA 4기 김민석, 최호윤, 한주상이라고 합니다.
+저희는 Dacon에서 제주도 특산물에 대한 가격 예측 경진 대회에 참여했습니다. 구성원 모두 데이터 관련 경진 대회 경험을 얻고 싶어 이 프로젝트를 11.8 ~ 12.3일 까지 진행 하게 되었습니다.
 
 ## 회의 계획 내용(feat. 화이트보드)
 ![plan6](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/bd7673b7-57e2-4b8f-a4b9-c978c0492727)
 
 ![plan7](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/7bab799c-7680-4f72-a31a-9cf06c844ca1)
 
-## 데이터 분석 과정(EDA) 이용
+## 데이터 분석 과정(EDA)
 1. 날짜 정보 EDA
 
 연도별 가격 평균을 통해 해가 갈수록 가격상승을 파악
@@ -64,11 +64,11 @@ model.fit(tr_time_df,presets="best_quality", time_limit=20000, random_seed=42) #
 result = model.predict(tr_time_df, known_covariates=test_time_df, random_seed=42) # 예측(테스트 데이터를 이용)
 ```
 
-이에 대한 데이터 시각화 (일정적으로 규칙적으로 변화가 있다는 것을 알 수 있다.)
+이에 대한 데이터 시각화 (일정적으로 규칙적으로 변화가 있다는 것을 확인했다.)
 
 <img width="504" alt="plan5" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/ef175fea-cc3b-42fe-a2a5-754be7c3932f">
 
-## 마지막으로 전처리 때 썼던 EDA 방법을 이용하여 후처리
+## EDA를 반영한 후처리
 
 1. 공휴일의 데이터 값을 0으로 변경
 
@@ -77,17 +77,17 @@ result = model.predict(tr_time_df, known_covariates=test_time_df, random_seed=42
 3. 음수로 예측한 값을 0으로 변경
 
 
-## 프로젝트를 통해서 알 수 있는 점
+## 프로젝트를 통해서 느낀점
 
-1. DACON에서 나온 경진대회 이외에 대회에서 제일 중요한 건 점수다(중요한 건 꺾이지 않는 마음으로 점수에 임한다.)
+1. Dacon 대회에서 제일 중요한 건 점수다.
 
-2. 데이터를 이해하는 것이 제일 중요
+2. 데이터를 이해하는 것이 제일 중요.
 
-3. 어떤 모델을 쓰냐? 파라미터 튜닝(X) 전처리 및 후처리를 어떻게 하냐?(O)
+3. 어떤 모델을 쓰냐?(X) 파라미터 튜닝?(X) 전처리 및 후처리를 어떻게 하냐?(O)
 
-4. 앞으로 DACON 대회본선에 들고 나서 기법에 대해 알아도 된다.
+4. DACON 대회본선 순위권에 들고 나서 기법에 대해 이해해도 된다.
 
-코드는 github에 파일 올려놨으니 참고해주시기 바랍니다! 감사합니다!
+코드는 github에 파일 올려놨으니 참고해주시기 바랍니다! 
 
 ## Reference(참고 문헌)
 
