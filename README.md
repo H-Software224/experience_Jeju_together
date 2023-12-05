@@ -6,12 +6,20 @@ Dacon에서 우연히 제주도에서 특산물에 대해서 가격을 예측하
 
 ## 데이터 분석 과정(EDA) 이용
 1. 날짜 정보 EDA
+<img width="423" alt="plan1" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/eaf841cc-2313-4117-a079-3f4537114e9b">
 
 연도별 가격 평균을 통해 해가 갈수록 가격상승을 파악
 
+월별 가격 평균을 통해 계절 별로 가격의 변화를 파악
+<img width="421" alt="plan2" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/1b50bd7e-563d-4aab-83b3-07d9dc9e6a29">
+
 2. 시계열 정보 EDA
+<img width="455" alt="plan3" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/2d02b7e9-7d0c-4748-a1ef-14c62a5cbe77">
 
 3. 이상치 EDA
+
+<img width="422" alt="plan4" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/a2de784a-4933-4486-a1b7-8bb574476720">
+
 ## 모델 선정 과정
 
 1. 자동 회귀 예측 통합 이동 평균 분석 모델(ARIMA)로 예측 시도
@@ -38,6 +46,7 @@ test_price_list+= (predict_total_price / predict_supply).to_list()
 
 
 
+<img width="454" alt="plan6" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/f6c8568c-a408-499a-a6ac-7c054ff9a1db">
 
 2. 자동 머신러닝 학습 모듈(AutoGulon) 시도
 
@@ -52,6 +61,8 @@ result = model.predict(tr_time_df, known_covariates=test_time_df, random_seed=42
 ```
 
 이에 대한 데이터 시각화 (일정적으로 규칙적으로 변화가 있다는 것을 알 수 있다.)
+
+<img width="504" alt="plan5" src="https://github.com/H-Software224/experience_Jeju_together/assets/66872113/ef175fea-cc3b-42fe-a2a5-754be7c3932f">
 
 ## 마지막으로 전처리 때 썼던 EDA 방법을 이용하여 후처리
 
@@ -69,6 +80,26 @@ result = model.predict(tr_time_df, known_covariates=test_time_df, random_seed=42
 
 코드는 github에 파일 올려놨으니 참고해주시기 바랍니다! 감사합니다!
 
+## Reference(참고 문헌)
 
+ARIMA 모듈 URL
 
+<https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html>
 
+AutoGluon URL
+
+TimeSeriesDataFrame
+
+<https://auto.gluon.ai/stable/api/autogluon.timeseries.TimeSeriesDataFrame.html>
+
+TimeSeriesPredictor
+
+<https://auto.gluon.ai/stable/api/autogluon.timeseries.TimeSeriesPredictor.html>
+
+PPT 템플릿
+
+<https://www.slidemembers.com/en_US/search/ALL/jejudo/1/>
+
+EDA 코드 공유(DACON 참고)
+
+<https://dacon.io/competitions/official/236176/codeshare/9167?page=3&dtype=recent>
