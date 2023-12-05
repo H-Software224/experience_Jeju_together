@@ -4,6 +4,11 @@
 안녕하세요. 저희는 이번 KHUDA 4기 Let's experience Jeju together 프로젝트를 하게 된 KHUDA 4기 김민석, 최호윤 그리고 한주상이라고 합니다.
 Dacon에서 우연히 제주도에서 특산물에 대해서 가격을 예측하는 것이 행사를 하는 것을 보게 되어서, 이번 KHUDA 동아리에서 정규 프로젝트인 만큼 데이터를 분석하고 싶어서 이거 아니면 데이터 분석 예측을 더이상 할 기회가 없다고 생각하였습니다. 그래서 이 주제로 프로젝트를 11.8 ~ 12.3일 까지 하게 되었습니다.
 
+## 회의 계획 내용(feat. 화이트보드)
+![plan6](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/bd7673b7-57e2-4b8f-a4b9-c978c0492727)
+
+![plan7](https://github.com/H-Software224/experience_Jeju_together/assets/66872113/7bab799c-7680-4f72-a31a-9cf06c844ca1)
+
 ## 데이터 분석 과정(EDA) 이용
 1. 날짜 정보 EDA
 
